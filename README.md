@@ -33,43 +33,9 @@ AthenaHoundAD is a fully-featured cross-platform agent designed using the crossp
 
 2.) From the Mythic install directory run the following command:
 
-`./mythic-cli install github https://github.com/byt3n33dl3/AthenaHoundAD`
+`./AthenaHoundAD install github https://github.com/byt3n33dl3/AthenaHoundAD`
 
-## Supported C2 Profiles
-
-### HTTP
-Athena can act as an egress channel over the default `http` Profile in use by Mythic. 
-
-Note: All taskings and Responses are done via POST requests. So the GET URI parameter is unnecessary at this time.
-
-### Websockets
-Athena can act as an egress channel over the `websocket` profile. This is the recommended profile to use when making use of the SOCKS5 functionality.
-
-### Discord
-Athena can communicate over discord channels.
-
-Note: Due to Discords API rate limiting, the number of agents that can be executed at once using a specific workspace/token combination is limited. A lower sleeptime supports more agents.
-
-### SMB
-Athena supports SMB communications for internal comms over named pipes.
-
-## Opsec Considerations
-### Agent Size
-There are multiple ways Athena can be built which have a large effect on the final size of the payload
-
-- Standard
-  - The smallest option. This contains just the base agent code, and requires you to package all of the DLLs with the agent. Not great for phishing, but the option is there if you want it.
-  - File Size: 114KB
-- Self Contained
-  - The largest option. This contains the base agent code, and the entire .NET framework. This file will be very large, but will allow for the most flexibility when operating. Compression shrinks this size down dramatically
-  - File Size: 63MB
-  - Compressed Size: 33.8MB
-- Self-Contained Trimmed
-  - Medium option. This contains the base agent code, and only the required libraries. This file is smaller than the regular self contained option, however you may encounter some difficulties with custom `execute-assembly` assemblies. You will need to load their dependencies manually using `load-assembly` even if they're usually built into the framework
-  - File Size: 18.5MB
-  - Compressed Size: 12.8MB
-
-## Credit
+# Credits
 [@byt3n33dl3](https://twitter.com/byt3n33dl3) - Creator of the AthenaHoundAD
 
 [@its_a_feature_](https://twitter.com/its_a_feature_) - Creator of the Mythic framework
@@ -86,4 +52,4 @@ There are multiple ways Athena can be built which have a large effect on the fin
 - Large Binary Sizes
   - Athena binaries default to being "self-contained", this essentially means the entire .NET runtime is included in the binary leading to larger sizes. If you need smaller binaries, experiment with the `trimmed`, and `compressed` options.
 - Athena doesn't work with <insert common .NET executable here>
-  - Athena is built using the latest version of .NET which is fundamentally different from the .NET Framework, which a majority of offensive security tools use. Any .NET Framework binaries will need to be converted to .NET 7 before they can be used with `execute-assembly` alternatively, you can use `inject-assembly` to use `donut` to convert it to shellcode and inject into a sacrificial process.
+  - Athena is built using the latest version of .NET which is fundamentally different from the .NET Framework, which a majority of offensive security tools use. Any .NET Framework binaries will need to be converted to .NET 7 before they can be used with `execute` assembly alternatively, you can use `inject` assembly to use `donut` to convert it to shellcode and inject into a sacrificial process.
