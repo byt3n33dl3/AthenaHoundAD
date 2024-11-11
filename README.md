@@ -33,7 +33,9 @@ AthenaHoundAD is a fully-featured cross-platform agent designed using the crossp
 
 2.) From the Mythic install directory run the following command:
 
-`./AthenaHoundAD install github https://github.com/byt3n33dl3/AthenaHoundAD`
+```csharp
+./AthenaHoundAD install github https://github.com/byt3n33dl3/AthenaHoundAD
+```
 
 # Credits
 [@byt3n33dl3](https://twitter.com/byt3n33dl3) - Creator of the AthenaHoundAD
