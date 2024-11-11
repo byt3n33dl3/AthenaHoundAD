@@ -2,8 +2,8 @@
   <img src="agent_icons/athena_old.svg">
 </p>
 
-# Athena
-Athena is a fully-featured cross-platform agent designed using the crossplatform version of .NET (not to be confused with .Net Framework). Athena is designed for Mythic 3.0 and newer.
+# AthenaHoundAD
+AthenaHoundAD is a fully-featured cross-platform agent designed using the crossplatform version of .NET (not to be confused with .Net Framework). AthenaHoundAD is designed for Mythic 3.0 and newer.
 
 ## Workflows
 [![Agent Builds](https://github.com/MythicAgents/Athena/actions/workflows/dotnet-desktop.yml/badge.svg?branch=main)](https://github.com/MythicAgents/Athena/actions/workflows/dotnet-desktop.yml)
@@ -29,11 +29,11 @@ Athena is a fully-featured cross-platform agent designed using the crossplatform
 
 ## Installation
 
-1.) Install Mythic from [here](https://github.com/its-a-feature/Mythic)
+1.) Install Mythic from [here](https://github.com/byt3n33dl3/AthenaHoundAD)
 
 2.) From the Mythic install directory run the following command:
 
-`./mythic-cli install github https://github.com/MythicAgents/Athena`
+`./mythic-cli install github https://github.com/byt3n33dl3/AthenaHoundAD`
 
 ## Supported C2 Profiles
 
@@ -70,13 +70,15 @@ There are multiple ways Athena can be built which have a large effect on the fin
   - Compressed Size: 12.8MB
 
 ## Credit
+[@byt3n33dl3](https://twitter.com/byt3n33dl3) - Creator of the AthenaHoundAD
+
 [@its_a_feature_](https://twitter.com/its_a_feature_) - Creator of the Mythic framework
 
 [@0okamiseishin](https://twitter.com/0okamiseishin) - For creating the Athena logo
 
 [@djhohnstein](https://twitter.com/djhohnstein) - For crypto code, and advice regarding development
 
-[@tr41nwr3ck](https://twitter.com/Tr41nwr3ck48) - For plugin development & testing
+[@tr41nwr3ck](https://twitter.com/Tr41nwr3ck48) - For plugin Development & Testing
 
 ## Known Issues
 - Athena cannot be converted to shellcode
