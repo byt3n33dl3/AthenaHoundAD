@@ -55,3 +55,8 @@ AthenaHoundAD is a fully-featured cross-platform agent designed using the crossp
   - Athena binaries default to being "self-contained", this essentially means the entire .NET runtime is included in the binary leading to larger sizes. If you need smaller binaries, experiment with the `trimmed`, and `compressed` options.
 - Athena doesn't work with <insert common .NET executable here>
   - Athena is built using the latest version of .NET which is fundamentally different from the .NET Framework, which a majority of offensive security tools use. Any .NET Framework binaries will need to be converted to .NET 7 before they can be used with `execute` assembly alternatively, you can use `inject` assembly to use `donut` to convert it to shellcode and inject into a sacrificial process.
+
+# LICENSE / `Super`
+>- AGPL | 3.0
+
+>- MIT
