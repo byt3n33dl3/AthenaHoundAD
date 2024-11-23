@@ -3,12 +3,10 @@
 </p>
 
 # AthenaHoundAD
-AthenaHoundAD is a fully-featured cross-platform agent designed using the crossplatform version of .NET (not to be confused with .Net Framework). AthenaHoundAD is designed for Mythic 3.0 and newer.
+AthenaHoundAD is a Fully featured Cross platform agent designed using the crossplatform version of .NET, not to be confused with .Net Framework. AthenaHoundAD is designed for Mythic 3.0 and newer.
 
 ## Workflows
-[![Agent Builds](https://github.com/MythicAgents/Athena/actions/workflows/dotnet-desktop.yml/badge.svg?branch=main)](https://github.com/MythicAgents/Athena/actions/workflows/dotnet-desktop.yml)
-
-[![Build and push container images](https://github.com/MythicAgents/Athena/actions/workflows/docker.yml/badge.svg?branch=main)](https://github.com/MythicAgents/Athena/actions/workflows/docker.yml)
+[![Agent Builds](https://github.com/MythicAgents/Athena/actions/workflows/dotnet-desktop.yml/badge.svg?branch=main)](https://github.com/MythicAgents/Athena/actions/workflows/dotnet-desktop.yml) [![Build and push container images](https://github.com/MythicAgents/Athena/actions/workflows/docker.yml/badge.svg?branch=main)](https://github.com/MythicAgents/Athena/actions/workflows/docker.yml)
 
 ## Features
 - Crossplatform
@@ -29,7 +27,7 @@ AthenaHoundAD is a fully-featured cross-platform agent designed using the crossp
 
 ## Installation
 
-1.) Install Mythic from [here](https://github.com/byt3n33dl3/AthenaHoundAD)
+1.) Install `Mythic` from [here](https://github.com/byt3n33dl3/AthenaHoundAD)
 
 2.) From the Mythic install directory run the following command:
 
@@ -57,6 +55,17 @@ AthenaHoundAD is a fully-featured cross-platform agent designed using the crossp
   - Athena is built using the latest version of .NET which is fundamentally different from the .NET Framework, which a majority of offensive security tools use. Any .NET Framework binaries will need to be converted to .NET 7 before they can be used with `execute` assembly alternatively, you can use `inject` assembly to use `donut` to convert it to shellcode and inject into a sacrificial process.
 
 # LICENSE / `Super`
->- AGPL | 3.0
+>- AGPL 3.0 [gnu.agpl.org](gnu.agpl.org)
 
 >- MIT
+
+# Credits / `main`
+
+<p align="left">
+<a href="https://github.com/byt3n33dl3"><img src="https://avatars.githubusercontent.com/u/151133481?v=4" width="50" height="50" alt="" style="max-width: 100%;"></a>
+<a href="https://github.com/projectdiscovery"><img src="https://avatars.githubusercontent.com/u/50994705?s=200&v=4" width="50" height="50" alt="" style="max-width: 100%;"></a>
+<a href="https://github.com/MythicAgents"><img src="https://avatars.githubusercontent.com/u/73145583?s=200&v=4" width="50" height="50" alt="" style="max-width: 100%;"></a>
+<a href="https://github.com/ehsandeep"><img src="https://avatars.githubusercontent.com/u/8293321?v=4" width="50" height="50" alt="" style="max-width: 100%;"></a>
+<a href="https://github.com/mattreduce"><img src="https://avatars.githubusercontent.com/u/66427?v=4" width="50" height="50" alt="" style="max-width: 100%;"></a>
+<a href="https://github.com/OceanExec"><img src="https://avatars.githubusercontent.com/u/171657497?s=200&v=4" width="50" height="50" alt="" style="max-width: 100%;"></a>
+</p>
